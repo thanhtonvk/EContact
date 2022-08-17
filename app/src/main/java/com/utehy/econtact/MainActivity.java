@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public void mang(){
         for (int i = 0; i < 5; i++) {
               mangphu(i);
+//đây là khi thay đổi code
         }
     }
 }
