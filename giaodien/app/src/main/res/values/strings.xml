@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">giaodien</string>
-    <string name="thong_tin">Thông tin</string>
-    <string name="thu_vien">Thư viện</string>
-    <string name="hoc_ky">Học kỳ</string>
-    <string name="trang_chu">Trang chủ</string>
-    <string name="chuc_nang">Chức năng</string>
-</resources>
