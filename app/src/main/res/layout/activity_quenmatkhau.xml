@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".QuenmatkhauActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:text="Quên mật khoản"
+            android:gravity="center"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/inputMatkhaudk1"
+            android:background="@drawable/vien"
+            android:drawableLeft="@drawable/ic_key"
+            android:hint="Nhập mật khẩu mới"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/inputMatkhaudk2"
+            android:background="@drawable/vien"
+            android:drawableLeft="@drawable/ic_key"
+            android:hint="Xác định mật khẩu"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/HienMatkhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:text="Hiện mật khẩu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận"
+            android:backgroundTint="#5F6F70"
+            android:id="@+id/btnXacNhan"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
