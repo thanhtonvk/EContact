@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_web.xml" value="0.132" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vien.xml" value="0.1015" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/actitvity_hanhkiem.xml" value="0.16485507246376813" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.22" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.1" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_login.xml" value="0.18385416666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_main.xml" value="0.18385416666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.25" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quenmatkhau.xml" value="0.19947916666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.16485507246376813" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.22" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1985" />

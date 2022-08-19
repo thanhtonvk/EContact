@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">EContact</string>
     <string name="bat_dau">Bắt đầu</string>
-    <string name="hihi_vl">VCL</string>
+    <string name="truong">Trường đại học sư phạm kỹ thuật Hưng Yên</string>
+    <string name="thong_tin">Thông tin hồ sơ</string>
+    <string name="lop">Lớp: 17.5</string>
+    <string name="ho_so">Hồ sơ sinh viên</string>
+    <string name="qua_trinh">Quá trình học tập</string>
+    <string name="hanh_kiem">Hạnh kiểm</string>
+    <string name="lien_he">Liên hệ</string>
+    <string name="thong_bao">Thông báo</string>
+    <string name="hoc_ky">Học kỳ</string>
+    <string name="nam_hoc">Năm học</string>
+    <string name="danhsach_thongtin">Danh sách thông tin học phần</string>
+    <string name="ma_sinhvien">Mã sinh viên</string>
+    <string name="xep..loai">Xếp loại học tập:</string>
+    <string name="tbc..hoctap">TBC học tập:</string>
+    <string name="tbc..tichluy">TBC tích lũy:</string>
+    <string name="tin_chi..tl">Số tín chỉ tích lũy:</string>
+    <string name="tin_chi..ht">Số tín chỉ học tập:</string>
+    <string name="ho..ten">Họ tên:</string>
+    <string name="ngay..sinh">Ngày sinh:</string>
+    <string name="gioi..tinh">Giới tính:</string>
+    <string name="dia..chi">Địa chỉ:</string>
+    <string name="lop..">Lớp:</string>
+    <string name="ma..sinhvien">Mã sinh viên:</string>
+    <string name="giao..vien">GVCN:</string>
+    <string name="hanh..kiem">Hạnh kiểm:</string>
+    <string name="hoc..luc">Học lực:</string>
 </resources>
