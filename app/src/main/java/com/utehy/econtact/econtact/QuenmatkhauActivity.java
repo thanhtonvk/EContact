@@ -11,6 +11,6 @@ public class QuenmatkhauActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quenmatkhau);
+        setContentView(R.layout.activity_hien_matkhau);
     }
 }
