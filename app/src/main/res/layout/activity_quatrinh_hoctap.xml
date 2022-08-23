@@ -1,41 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/mau_greenblue"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:background=""
         android:orientation="horizontal">
+
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/ic_baseline_arrow_back"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/anh_back" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/qua_trinh"
-            android:textStyle="bold"
+            android:layout_marginRight="40dp"
             android:gravity="center"
-            android:textSize="30dp"/>
+            android:text="@string/hoc_tap"
+            android:textColor="@color/green"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/bovien"
+        android:background="@drawable/goc_bo_vien"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,172 +54,255 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:text="@string/danhsach_thongtin"
-                android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:textSize="15dp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="10dp">
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ma..sinhvien"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_quatrinh_masinhvien"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:text="10119092"
                 android:textColor="#FF0000"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/xep..loai"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:layout_height="match_parent"
+                android:text="@string/ho..ten"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
             <TextView
-                android:id="@+id/tv_quatrinh_xlht"
+                android:id="@+id/tv_quatrinh_hoten"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Khá"
-                android:textColor="#FF0000"
                 android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:text="Nguyễn Hữu Đạt"
+                android:textColor="#FF0000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tbc..hoctap"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:layout_height="match_parent"
+                android:text="@string/giao..vien"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
             <TextView
-                android:id="@+id/tv_quatrinh_tbcht"
+                android:id="@+id/tv_quatrinh_gvcn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khá"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:text="Nguyễn Hoàng Điệp"
                 android:textColor="#FF0000"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:textStyle="bold" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tbc..tichluy"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-            <TextView
-                android:id="@+id/tv_quatrinh_tbctl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khá"
-                android:textColor="#FF0000"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tin_chi..ht"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-            <TextView
-                android:id="@+id/tv_quatrinh_tcht"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khá"
-                android:textColor="#FF0000"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tin_chi..tl"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-            <TextView
-                android:id="@+id/tv_quatrinh_tctl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Khá"
-                android:textColor="#FF0000"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
-        </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textStyle="bold"
-                android:text="@string/hoc_ky"/>
+                android:text="@string/nam_hoc"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
             <Spinner
-                android:id="@+id/spin_hocky"
+                android:id="@+id/spin_quatrinh_namhoc"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
-                android:textStyle="bold"
-                android:text="@string/nam_hoc"/>
+                android:text="@string/hoc_ky"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
             <Spinner
-                android:id="@+id/spin_namhoc"
+                android:id="@+id/spin_quatrinh_hocky"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="10dp">
-            <LinearLayout
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/goc_bo_vien">
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/goc_bo_vuong"
+                        android:text="@string/s_tt"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/goc_bo_vuong"
+                        android:text="@string/ten_hocphan"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/goc_bo_vuong"
+                        android:text="@string/diem_hocphan"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/goc_bo_vuong"
+                        android:text="@string/tin_chi"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/goc_bo_vuong"
+                        android:text="@string/ghi_chu"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
         </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hoc..lucky1"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_quatrinh_hk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Giỏi"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hoc..lucky2"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_quatrinh_hk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Giỏi"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

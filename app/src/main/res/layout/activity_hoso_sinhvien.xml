@@ -1,236 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mau_greenblue"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
+
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/ic_baseline_arrow_back"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:background="@drawable/anh_back" />
+
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ho_so"
-        android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
             android:gravity="center"
-            android:textSize="30dp"/>
+            android:text="@string/ho_so"
+            android:textColor="@color/green"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="30dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/bovien"
+        android:background="@drawable/goc_bo_vien"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:background="@drawable/user"/>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/anh_student" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ho..ten"
                     android:layout_marginStart="10dp"
+                    android:text="@string/ho..ten"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_hoten"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
                     android:text="Nguyễn Hữu Đạt"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ngay..sinh"
                     android:layout_marginStart="10dp"
+                    android:text="@string/ngay..sinh"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_ngaysinh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:layout_marginStart="19.5dp"
                     android:text="25/07/2001"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/dia..chi"
                     android:layout_marginStart="10dp"
+                    android:text="@string/dia..chi"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_diachi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:layout_marginStart="47.5dp"
                     android:text="An Lạc - Khoái Châu - Hưng Yên"
-                    android:layout_marginStart="10dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/lop.."
                     android:layout_marginStart="10dp"
+                    android:text="@string/lop.."
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_lop"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="75.5dp"
                     android:text="TK17.5"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ma..sinhvien"
                     android:layout_marginStart="10dp"
+                    android:text="@string/ma..sinhvien"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_masinhvien"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="50.5dp"
                     android:text="10119092"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/giao..vien"
                     android:layout_marginStart="10dp"
+                    android:text="@string/giao..vien"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_gvcn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
                     android:text="Nguyễn Hoàng Điệp"
-                    android:layout_marginStart="20dp"
                     android:textColor="#000000"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/gioi..tinh"
                     android:layout_marginStart="10dp"
+                    android:text="@string/gioi..tinh"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_gioitinh"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="33dp"
                     android:text="Nam"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hanh..kiem"
                     android:layout_marginStart="10dp"
+                    android:text="@string/hanh..kiem"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_hanhkiem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
                     android:text="Khá"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hoc..luc"
                     android:layout_marginStart="10dp"
+                    android:text="@string/hoc..luc"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tv_hoso_hocluc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
                     android:text="Khá"
                     android:textColor="#000000"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textSize="20dp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

@@ -3,24 +3,51 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1155" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/background_greenblue.xml" value="0.134" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1155" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bovien.xml" value="0.1155" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bovienvuong.xml" value="0.1155" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_vuong.xml" value="0.1205" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_autorenew.xml" value="0.1205" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_notifications.xml" value="0.1" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_notifications_active.xml" value="0.1" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_web.xml" value="0.132" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_key.xml" value="0.1205" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1205" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1205" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_person.xml" value="0.133" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/mau.xml" value="0.133" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/timhong.xml" value="0.133" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vien.xml" value="0.1015" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vien_quatrinh_hoctap.xml" value="0.1" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vienvuong.xml" value="0.1155" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/actitvity_hanhkiem.xml" value="0.16485507246376813" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.19947916666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_gmail.xml" value="0.19947916666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.19947916666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_login.xml" value="0.18385416666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_main.xml" value="0.18385416666666668" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quatrinh.xml" value="0.1984375" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.22" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quenmatkhau.xml" value="0.21" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_sms.xml" value="0.16" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/dangnhap.xml" value="0.22" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/trangchu.xml" value="0.19947916666666668" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1985" />
-        <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_key.xml" value="0.1" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1985" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_person.xml" value="0.1" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/vien.xml" value="0.1" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.25416666666666665" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.22826086956521738" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.22826086956521738" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.22826086956521738" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_quenmatkhau.xml" value="0.264" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.22826086956521738" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/cauhoi_baomat.xml" value="0.128" />
-        <entry key="..\:/duan/EContact/app/src/main/res/layout/cauhoibaomat.xml" value="0.22826086956521738" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/dangxuat.xml" value="0.253125" />
       </map>
     </option>

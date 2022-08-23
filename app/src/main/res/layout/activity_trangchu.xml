@@ -4,194 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mau_greenblue"
     android:orientation="vertical"
-    android:background="#BAFAF2"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="210dp"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="#BAFAF2"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/truong"
-                android:layout_gravity="center"
-                android:textColor="#FA4646"
                 android:layout_marginTop="10dp"
-                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/truong"
+                android:textColor="@color/green"
+                android:textSize="25dp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/logotruong"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginLeft="80dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/anh_logotruong" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:background="@drawable/ic_baseline_phone" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="7dp"
-                            android:text="0221.3689.555"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"
-                            android:layout_gravity="center"
-                            android:textSize="15dp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:background="@drawable/ic_baseline_web" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="7dp"
-                            android:textStyle="bold"
-                            android:textColor="#36B6F1"
-                            android:layout_gravity="center"
-                            android:text=" http://www.utehy.edu.vn/"
-                            android:textSize="15dp" />
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
-
-
         </LinearLayout>
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_account_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/trang_chu"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/bovien"
+        android:background="@drawable/goc_bo_vien"
+        android:backgroundTint="@color/white"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_baseline_account_circle" />
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
 
-            <TextView
+                <ImageButton
+                    android:id="@+id/imgbt_hoso"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/anh_student" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ho_so"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="@string/thong_tin"
-                android:layout_gravity="center"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgbt_hoctap"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/anh_book" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/hoc_tap"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/user" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Nguyễn Hữu Đạt"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/lop"
-            android:textStyle="bold" />
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical">
-                <Button
-                    android:id="@+id/btn_thongtinsv"
-                    android:layout_width="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgbt_thongbao"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/anh_notification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:text="@string/thong_bao"
                     android:textColor="@color/black"
-                    android:drawableLeft="@drawable/ic_baseline_person"
-                    android:text="@string/ho_so" />
-            <Button
-                android:id="@+id/btn_quatrinhht"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/ic_baseline_text_snippet"
-                android:text="@string/qua_trinh" />
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_hanhkiem"
-                android:layout_width="250dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/ic_baseline_school"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hanh_kiem" />
-            <Button
-                android:id="@+id/btn_thongbao"
-                android:layout_width="250dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/ic_baseline_notifications_active"
-                android:layout_height="wrap_content"
-                android:text="@string/thong_bao"/>
-            <Button
-                android:id="@+id/btn_lienhe"
-                android:layout_width="250dp"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/ic_baseline_phone"
-                android:layout_height="wrap_content"
-                android:text="@string/lien_he"/>
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
 
+                <ImageButton
+                    android:id="@+id/imgbt_lienhe"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/anh_contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/lien_he"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
