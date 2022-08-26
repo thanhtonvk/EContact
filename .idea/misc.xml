@@ -64,9 +64,17 @@
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_person.xml" value="0.1" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/vien.xml" value="0.1" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.2210144927536232" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.2210144927536232" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2210144927536232" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2210144927536232" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_ma_otp.xml" value="0.2210144927536232" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.2210144927536232" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_quenmatkhau.xml" value="0.264" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.2210144927536232" />
+        <entry key="..\:/duan/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.2210144927536232" />
         <entry key="..\:/duan/EContact/app/src/main/res/layout/dangxuat.xml" value="0.253125" />
       </map>
     </option>

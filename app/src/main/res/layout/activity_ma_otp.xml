@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_hinh_nen"
+    android:padding="20dp"
+    tools:context=".Ma_OTP_Activity">
+
+    <EditText
+        android:id="@+id/edt_nhap_OTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="#FFFFFF"
+        android:hint="Nhập Mã OTP "
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_gui_OTP"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="241dp"
+        android:background="@drawable/goc_bo_vien"
+        android:backgroundTint="#80D8FF"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Gửi Mã OTP"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</LinearLayout>
