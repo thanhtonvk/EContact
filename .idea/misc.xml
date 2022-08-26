@@ -41,6 +41,9 @@
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/bovien.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_tron.xml" value="0.1865" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_vien.xml" value="0.1865" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_vuong.xml" value="0.1865" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_key.xml" value="0.139" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.139" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_person.xml" value="0.139" />
@@ -48,10 +51,14 @@
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.11141304347826086" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_main.xml" value="0.209375" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.21" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quen_matkhau.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/dangnhap.xml" value="0.209375" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1985" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1985" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1" />

@@ -1,18 +1,16 @@
-package com.utehy.econtact;
+package com.utehy.econtact.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.EditText;
 
-public class LoginActivity extends AppCompatActivity {
+import com.utehy.econtact.R;
 
+public class QuenmatkhauActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_quen_matkhau);
     }
-
-
 }

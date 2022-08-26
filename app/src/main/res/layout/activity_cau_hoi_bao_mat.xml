@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".CauHoiBaoMat_Activity">
+    android:background="@drawable/hinh_nen"
+    tools:context=".Activity.CauHoiBaoMat_Activity">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,9 +20,10 @@
         <TextView
             android:layout_height="80dp"
             android:layout_width="match_parent"
-            android:text="Quên thông tin tài khoản"
+            android:text="Lấy lại mật khẩu"
+            android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="30dp"/>
+            android:textSize="40dp"/>
     </LinearLayout>
 
     <TextView
@@ -100,10 +101,11 @@
         android:gravity="center">
 
         <Button
-            android:layout_width="120dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Xác Nhận"
-            android:backgroundTint="#5F6F70"
+            android:background="@drawable/goc_bo_tron"
+            android:backgroundTint="#068940"
             android:id="@+id/btnXacNhan"
             android:textAllCaps="false"
             android:layout_gravity="center"/>

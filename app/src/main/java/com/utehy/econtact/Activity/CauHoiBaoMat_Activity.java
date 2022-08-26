@@ -1,14 +1,15 @@
-package com.utehy.econtact;
+package com.utehy.econtact.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class QuenmatkhauActivity extends AppCompatActivity {
+import com.utehy.econtact.R;
+
+public class CauHoiBaoMat_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hien_matkhau);
+        setContentView(R.layout.activity_cau_hoi_bao_mat);
     }
 }
