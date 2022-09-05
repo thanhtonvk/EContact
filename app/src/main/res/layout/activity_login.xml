@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/hinh_nen"
+    android:background="@drawable/hinh_nen_1"
     tools:context=".Activity.LoginActivity">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:gravity="center"
-            android:text="Trường Đại Học Sư Phạm Kĩ Thuật Hưng Yên
+            android:text="Trường Đại Học Sư Phạm Kỹ Thuật Hưng Yên
             Khoa Công Nghệ Thông Tin"
             android:textColor="@color/white"
             android:textSize="20dp"
