@@ -80,7 +80,7 @@
                 android:id="@+id/tv_lienhe_cs1_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="39dp"
+                android:layout_marginStart="34dp"
                 android:text="http://www.utehy.edu.vn/"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -104,9 +104,10 @@
                 android:id="@+id/tv_lienhe_cs1_dc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="45dp"
                 android:text="Cơ sở Khoái Châu: Khoái Châu - Hưng Yên"
                 android:textColor="#000000"
+                android:textStyle="bold"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -128,7 +129,7 @@
                 android:id="@+id/tv_lienhe_cs1_dt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:text="+84.0321.3713081 - 0221.3689.888"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -152,7 +153,7 @@
                 android:id="@+id/tv_lienhe_cs1_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="55dp"
                 android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -201,7 +202,7 @@
                 android:id="@+id/tv_lienhe_cs2_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="39dp"
+                android:layout_marginStart="34dp"
                 android:text="http://www.utehy.edu.vn/"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -225,9 +226,10 @@
                 android:id="@+id/tv_lienhe_cs2_dc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="45dp"
                 android:text="Cơ sở Mỹ Hào: Mỹ Hào - Hưng Yên"
                 android:textColor="#000000"
+                android:textStyle="bold"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -249,7 +251,7 @@
                 android:id="@+id/tv_lienhe_cs2_dt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:text="+84.0321.3742076 - 0221.3689.555"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -273,7 +275,7 @@
                 android:id="@+id/tv_lienhe_cs2_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
+                android:layout_marginStart="55dp"
                 android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -322,7 +324,7 @@
                 android:id="@+id/tv_lienhe_cs3_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="39dp"
+                android:layout_marginStart="34dp"
                 android:text="http://www.utehy.edu.vn/"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -346,9 +348,10 @@
                 android:id="@+id/tv_lienhe_cs3_dc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="45dp"
                 android:text="Cơ sở Hải Dương: Lương Bằng - TP Hải Dương"
                 android:textColor="#000000"
+                android:textStyle="bold"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -370,7 +373,7 @@
                 android:id="@+id/tv_lienhe_cs3_dt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:text="+84.0320.3894540 - 0221.3689.333"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -394,8 +397,8 @@
                 android:id="@+id/tv_lienhe_cs3_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:text="Ndhspkt@utehy.edu.vn"
+                android:layout_marginStart="55dp"
+                android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />
         </LinearLayout>

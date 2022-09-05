@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/ic_hinh_nen"
     android:padding="20dp"
-    tools:context=".Ma_OTP_Activity">
+    tools:context=".Activity.Ma_OTP_Activity">
 
     <EditText
         android:id="@+id/edt_nhap_OTP"

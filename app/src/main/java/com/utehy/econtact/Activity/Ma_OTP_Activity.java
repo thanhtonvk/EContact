@@ -10,20 +10,20 @@ import android.widget.Toast;
 
 import com.utehy.econtact.R;
 
-public class CauHoiBaoMat_Activity extends AppCompatActivity {
+public class Ma_OTP_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cau_hoi_bao_mat);
+        setContentView(R.layout.activity_ma_otp);
 
-        Button btn_xac_nhan = findViewById(R.id.btnXacNhanBM);
+        Button btn_gui_OTP = findViewById(R.id.btn_gui_OTP);
 
-        btn_xac_nhan.setOnClickListener(new View.OnClickListener() {
+        btn_gui_OTP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Ma_OTP_Activity.class);
-                Toast.makeText(getApplicationContext(),"Lấy mã OTP" ,Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getApplicationContext(), QuenmatkhauActivity.class);
+                Toast.makeText(getApplicationContext(),"Nhập mật khẩu mới",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });

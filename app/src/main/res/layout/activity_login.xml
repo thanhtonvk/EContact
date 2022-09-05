@@ -87,12 +87,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <EditText
-            android:id="@+id/edt_quen_mat_khau"
+        <TextView
+            android:id="@+id/tv_quen_mat_khau"
             android:layout_width="135dp"
             android:layout_height="44dp"
-            android:layout_marginLeft="230dp"
-            android:layout_marginTop="400dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="410dp"
             android:text="Quên mật khẩu"
             android:textColor="@color/white" />
 

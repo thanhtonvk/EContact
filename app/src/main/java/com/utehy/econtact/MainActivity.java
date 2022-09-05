@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+
 import com.utehy.econtact.Activity.LoginActivity;
-import com.utehy.econtact.Activity.ManHinhChinhActivity;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override

@@ -82,7 +82,7 @@
             android:text="Xác Nhận"
             android:background="@drawable/goc_bo_tron"
             android:backgroundTint="#068940"
-            android:id="@+id/btnXacNhan"
+            android:id="@+id/btnXacNhanQMK"
             android:textAllCaps="false"
             android:layout_gravity="center"/>
 

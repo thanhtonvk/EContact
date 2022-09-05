@@ -1,19 +1,25 @@
 package com.utehy.econtact.Models;
 
 public class TaiKhoan {
+    private String ID;
     private String TenTK;
     private String MatKhau;
-    private String HoTen;
-    private String SDT;
 
     public TaiKhoan() {
     }
 
-    public TaiKhoan(String tenTK, String matKhau, String hoTen, String SDT) {
+    public TaiKhoan(String ID, String tenTK, String matKhau) {
+        this.ID = ID;
         TenTK = tenTK;
         MatKhau = matKhau;
-        HoTen = hoTen;
-        this.SDT = SDT;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getTenTK() {
@@ -30,21 +36,5 @@ public class TaiKhoan {
 
     public void setMatKhau(String matKhau) {
         MatKhau = matKhau;
-    }
-
-    public String getHoTen() {
-        return HoTen;
-    }
-
-    public void setHoTen(String hoTen) {
-        HoTen = hoTen;
-    }
-
-    public String getSDT() {
-        return SDT;
-    }
-
-    public void setSDT(String SDT) {
-        this.SDT = SDT;
     }
 }
