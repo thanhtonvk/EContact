@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -33,7 +33,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/goc_bo_vien"
         android:orientation="vertical">
 
@@ -80,9 +80,9 @@
                 android:id="@+id/tv_lienhe_cs1_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
+                android:layout_marginStart="33dp"
                 android:text="http://www.utehy.edu.vn/"
-                android:textColor="#000000"
+                android:textColor="#000DFF"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -153,7 +153,7 @@
                 android:id="@+id/tv_lienhe_cs1_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="54dp"
                 android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -174,7 +174,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:text="@string/thongtin_lienhe_cs2"
@@ -202,9 +202,9 @@
                 android:id="@+id/tv_lienhe_cs2_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
+                android:layout_marginStart="33dp"
                 android:text="http://www.utehy.edu.vn/"
-                android:textColor="#000000"
+                android:textColor="#66CCFF"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -275,7 +275,7 @@
                 android:id="@+id/tv_lienhe_cs2_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="54dp"
                 android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -285,7 +285,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -324,9 +324,9 @@
                 android:id="@+id/tv_lienhe_cs3_ws"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
+                android:layout_marginStart="33dp"
                 android:text="http://www.utehy.edu.vn/"
-                android:textColor="#000000"
+                android:textColor="#66CCFF"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -372,7 +372,7 @@
             <TextView
                 android:id="@+id/tv_lienhe_cs3_dt"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="+84.0320.3894540 - 0221.3689.333"
                 android:textColor="#000000"
@@ -397,7 +397,7 @@
                 android:id="@+id/tv_lienhe_cs3_gmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
+                android:layout_marginStart="54dp"
                 android:text="dhspkt@utehy.edu.vn"
                 android:textColor="#000000"
                 android:textSize="20dp" />

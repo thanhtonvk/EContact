@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/ic_hinh_nen"
+    android:background="@drawable/anh_ic_hinh_nen"
     android:padding="20dp"
     tools:context=".Activity.Ma_OTP_Activity">
 

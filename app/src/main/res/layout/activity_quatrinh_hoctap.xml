@@ -171,15 +171,12 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/goc_bo_vien">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/goc_bo_tron"
+            android:orientation="vertical">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -187,30 +184,29 @@
                 android:layout_marginLeft="7dp"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
                 android:gravity="center">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="3dp"
+                    android:layout_marginBottom="2dp"
                     android:gravity="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/goc_bo_vuong"
+                        android:background="@drawable/goc_bo_vuong_trangden"
                         android:text="@string/s_tt"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/goc_bo_vuong"
+                        android:background="@drawable/goc_bo_vuong_trangden"
                         android:text="@string/ten_hocphan"
                         android:textColor="@color/black"
                         android:textSize="15dp"
@@ -220,7 +216,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/goc_bo_vuong"
+                        android:background="@drawable/goc_bo_vuong_trangden"
                         android:text="@string/diem_hocphan"
                         android:textColor="@color/black"
                         android:textSize="15dp"
@@ -230,7 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/goc_bo_vuong"
+                        android:background="@drawable/goc_bo_vuong_trangden"
                         android:text="@string/tin_chi"
                         android:textColor="@color/black"
                         android:textSize="15dp"
@@ -240,14 +236,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:background="@drawable/goc_bo_vuong"
+                        android:background="@drawable/goc_bo_vuong_trangden"
                         android:text="@string/ghi_chu"
                         android:textColor="@color/black"
                         android:textSize="15dp"
                         android:textStyle="bold" />
                 </TableRow>
             </TableLayout>
-        </ScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -26,7 +26,7 @@
                 android:gravity="center"
                 android:text="@string/truong"
                 android:textColor="@color/green"
-                android:textSize="25dp"
+                android:textSize="30dp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -53,10 +53,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
-            android:background="@drawable/ic_baseline_account_circle" />
+            android:background="@drawable/anh_home" />
 
         <TextView
             android:layout_width="wrap_content"

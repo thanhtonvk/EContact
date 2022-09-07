@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/hinh_nen"
+    android:background="@drawable/anh_hinh_nen"
     android:layout_height="match_parent"
     tools:context=".Activity.QuenmatkhauActivity">
 
@@ -40,22 +40,22 @@
             android:layout_height="10dp"/>
 
         <EditText
+            android:id="@+id/inputMatkhaudk1"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:id="@+id/inputMatkhaudk1"
-            android:background="@drawable/vien"
+            android:background="#25FFFFFF"
             android:drawableLeft="@drawable/ic_key"
             android:hint="Nhập mật khẩu mới"
             android:inputType="textPassword"
-            android:paddingLeft="10dp"/>
+            android:paddingLeft="10dp" />
 
         <EditText
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:id="@+id/inputMatkhaudk2"
-            android:background="@drawable/vien"
+            android:background="#251C0303"
             android:drawableLeft="@drawable/ic_key"
             android:hint="Xác định mật khẩu"
             android:paddingLeft="10dp"
