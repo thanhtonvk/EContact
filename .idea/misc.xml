@@ -8,58 +8,75 @@
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1155" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bovien.xml" value="0.1155" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/bovienvuong.xml" value="0.1155" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_tron.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_tron_item_thongbao.xml" value="0.67" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_vien.xml" value="0.122" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_vuong.xml" value="0.1205" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/goc_bo_vuong_trangden.xml" value="0.1" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_autorenew.xml" value="0.1205" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_account_circle.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_list_alt.xml" value="0.122" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_notifications.xml" value="0.1" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_notifications_active.xml" value="0.1" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_phone.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_school.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_text_snippet.xml" value="0.122" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_baseline_web.xml" value="0.132" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_eye.xml" value="0.122" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_key.xml" value="0.1205" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1205" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1205" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/ic_person.xml" value="0.133" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/mau.xml" value="0.133" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/mau_.xml" value="0.122" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/mau_greenblue.xml" value="0.1205" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/timhong.xml" value="0.133" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vien.xml" value="0.1015" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vien_quatrinh_hoctap.xml" value="0.1" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/drawable/vienvuong.xml" value="0.1155" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/actitvity_hanhkiem.xml" value="0.16485507246376813" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.19947916666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_gmail.xml" value="0.19947916666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.19947916666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.22" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_ma_otp.xml" value="0.17" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_login.xml" value="0.18385416666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_main.xml" value="0.18385416666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quatrinh.xml" value="0.1984375" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.22" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quen_matkhau.xml" value="0.19947916666666668" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_quenmatkhau.xml" value="0.21" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_sms.xml" value="0.16" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.22" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.22" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.2" />
+        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.2" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/dangnhap.xml" value="0.22" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/item_hoso.xml" value="0.25" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/item_quatrinh.xml" value="0.2" />
-        <entry key="..\:/Android studio/EContact/app/src/main/res/layout/item_thongbao.xml" value="0.25" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/trangchu.xml" value="0.19947916666666668" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_autorenew.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_account_circle.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_list_alt.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_notifications_active.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_person.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_phone.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_school.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_text_snippet.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_web.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_eye.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_key.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_person.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/mau_greenblue.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/mau_timhong.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/vien.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_login.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_ma_otp.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_quen_matkhau.xml" value="0.24139492753623187" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/dangnhap.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_quatrinh.xml" value="0.24139492753623187" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_thongbao.xml" value="0.24139492753623187" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/bovien.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_tron.xml" value="0.1865" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_vien.xml" value="0.1865" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/goc_bo_vuong.xml" value="0.1865" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_key.xml" value="0.139" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.139" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/drawable/ic_person.xml" value="0.139" />
@@ -67,10 +84,14 @@
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.11141304347826086" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_main.xml" value="0.209375" />
-        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.21" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quatrinh_hoctap.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_quen_matkhau.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.209375" />
         <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.209375" />
+        <entry key="..\:/Users/Dell/Downloads/EContact/app/src/main/res/layout/dangnhap.xml" value="0.209375" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/bogoc.xml" value="0.1985" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1985" />
         <entry key="..\:/duan/EContact/app/src/main/res/drawable/ic_lock.xml" value="0.1" />
