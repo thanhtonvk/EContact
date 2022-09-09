@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
     private void anhxa() {
         edt_tai_khoan = findViewById(R.id.edt_tai_khoan);
         edt_mat_khau = findViewById(R.id.edt_mat_khau);
-        tv_quen_mat_khau = findViewById(R.id.edt_quen_mat_khau);
+        tv_quen_mat_khau = findViewById(R.id.tv_quen_mat_khau);
         btn_dang_nhap = findViewById(R.id.btn_dang_nhap);
     }
 }

@@ -1,6 +1,7 @@
 package com.utehy.econtact.Activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -35,5 +36,14 @@ public class HoSoActivity extends AppCompatActivity {
         tv_hoso_hanhkiem = findViewById(R.id.tv_hoso_hanhkiem);
         tv_hoso_hocluc = findViewById(R.id.tv_hoso_hocluc);
     }
+    private void setClick(){
+        tv_hoso_hoten.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+    }
 }
