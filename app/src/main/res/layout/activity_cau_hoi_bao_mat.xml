@@ -85,7 +85,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="0dp"
-                android:background="@drawable/vien"
+                android:background="#45FFFFFF"
                 android:drawableLeft="@drawable/ic_key"
                 android:ems="10"
                 android:hint="Nhập Mã kiểm tra"

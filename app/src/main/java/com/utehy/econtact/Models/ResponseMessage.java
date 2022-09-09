@@ -2,9 +2,9 @@ package com.utehy.econtact.Models;
 
 import java.util.List;
 
-public class ResponseDiemHocPhan {
+public class ResponseMessage {
     private String MessageCode;
-    private List<DiemHocPhan> data;
+    private List<Object> data;
     private String ExtraInfo;
 
     public String getMessageCode() {
@@ -15,11 +15,11 @@ public class ResponseDiemHocPhan {
         MessageCode = messageCode;
     }
 
-    public List<DiemHocPhan> getData() {
+    public List<Object> getData() {
         return data;
     }
 
-    public void setData(List<DiemHocPhan> data) {
+    public void setData(List<Object> data) {
         this.data = data;
     }
 
@@ -31,13 +31,12 @@ public class ResponseDiemHocPhan {
         ExtraInfo = extraInfo;
     }
 
-    public ResponseDiemHocPhan(String messageCode, List<DiemHocPhan> data, String extraInfo) {
+    public ResponseMessage(String messageCode, List<Object> data, String extraInfo) {
         MessageCode = messageCode;
         this.data = data;
         ExtraInfo = extraInfo;
     }
 
-    public ResponseDiemHocPhan() {
+    public ResponseMessage() {
     }
-
 }
