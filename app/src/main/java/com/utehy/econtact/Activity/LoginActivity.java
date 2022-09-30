@@ -1,51 +1,104 @@
 package com.utehy.econtact.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.utehy.econtact.Api.ApiService.api;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
-import com.utehy.econtact.MainActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.textfield.TextInputEditText;
 import com.utehy.econtact.R;
+import com.utehy.econtact.Tools.Common;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText edt_tai_khoan,edt_mat_khau;
-    TextView tv_quen_mat_khau;
-    Button btn_dang_nhap;
+    EditText edtTaiKhoan;
+    TextInputEditText edtMatKhau;
+    Button btnDangNhap, btnQuenMatKhau;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        anhxa();
-
-        btn_dang_nhap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), ManHinhChinhActivity.class);
-                startActivity(i);
-            }
-        });
-
-        tv_quen_mat_khau.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), CauHoiBaoMat_Activity.class);
-                startActivity(i);
-            }
-        });
+        initView();
+        onClick();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color, this.getTheme()));
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color));
+        }
     }
 
-    private void anhxa() {
-        edt_tai_khoan = findViewById(R.id.edt_tai_khoan);
-        edt_mat_khau = findViewById(R.id.edt_mat_khau);
-        tv_quen_mat_khau = findViewById(R.id.tv_quen_mat_khau);
-        btn_dang_nhap = findViewById(R.id.btn_dang_nhap);
+    private void initView() {
+        edtTaiKhoan = findViewById(R.id.edt_ma_sv);
+        edtMatKhau = findViewById(R.id.edt_mat_khau);
+        btnDangNhap = findViewById(R.id.btn_dang_nhap);
+        btnQuenMatKhau = findViewById(R.id.btn_quen_mat_khau);
+    }
+
+    private void onClick() {
+        ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setTitle("Đang đăng nhập");
+        btnDangNhap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String maSV = edtTaiKhoan.getText().toString();
+                String matKhau = edtMatKhau.getText().toString();
+                if (maSV.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Mã sinh viên không được để trống", Toast.LENGTH_LONG).show();
+                }
+                if (maSV.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Mật khẩu không được để trống", Toast.LENGTH_LONG).show();
+                }
+                if (!maSV.isEmpty() && !matKhau.isEmpty()) {
+                    dialog.show();
+                    Map<String, String> body = new HashMap();
+                    body.put("facility_id", Common.FACILITY_ID);
+                    body.put("userName", maSV);
+                    body.put("password", Common.toMD5(maSV));
+                    body.put("grant_type", "password");
+
+                    api.login(body).enqueue(new Callback<Map<String, Object>>() {
+                        @Override
+                        public void onResponse(Call<Map<String, Object>> call, Response<Map<String, Object>> response) {
+                            if (response.isSuccessful()) {
+                                Common.LOGIN_USER = response.body();
+                                Common.TOKEN = (String) Common.LOGIN_USER.get("access_token");
+                                startActivity(new Intent(getApplicationContext(), ManHinhChinhActivity.class));
+                                dialog.dismiss();
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Tài khoản hoặc mật khẩu không chính xác", Toast.LENGTH_LONG).show();
+                                dialog.dismiss();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<Map<String, Object>> call, Throwable t) {
+                            Toast.makeText(getApplicationContext(), "Lỗi kết nối", Toast.LENGTH_LONG).show();
+                            Log.e("TAG", t.getMessage());
+                            dialog.dismiss();
+                        }
+                    });
+
+
+                }
+            }
+        });
+
     }
 }

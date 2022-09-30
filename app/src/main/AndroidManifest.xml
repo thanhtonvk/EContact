@@ -13,8 +13,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Activity.DiemRenLuyenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DiemHocTapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HocTapActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.Ma_OTP_Activity"
             android:exported="false" />

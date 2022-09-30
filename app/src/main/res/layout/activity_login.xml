@@ -3,106 +3,159 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/anhnenn"
+    android:orientation="vertical"
     tools:context=".Activity.LoginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="6">
 
-        <TextView
+        <View
+            android:backgroundTint="@color/blue"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:gravity="center"
-            android:text="Trường Đại Học Sư Phạm Kỹ Thuật Hưng Yên
-            Khoa Công Nghệ Thông Tin"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="120dp"
-            android:src="@drawable/anh_ic_logo_khoa_cntt" />
-
-        <EditText
-            android:id="@+id/edt_tai_khoan"
-            android:layout_width="323dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="270dp"
-            android:background="@drawable/goc_bo"
-            android:drawableLeft="@drawable/ic_person"
-            android:ems="10"
-            android:hint="Nhập tài khoản"
-            android:inputType="number"
-            android:longClickable="false"
-            android:paddingLeft="25dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/edt_mat_khau"
-            android:layout_width="323dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="350dp"
-            android:background="@drawable/goc_bo"
-            android:drawableLeft="@drawable/ic_lock"
-            android:drawableRight="@drawable/ic_eye"
-            android:ems="10"
-            android:hint="Nhập mật khẩu"
-            android:inputType="textPassword"
-            android:paddingLeft="25dp"
-            android:paddingRight="15dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:passwordToggleEnabled="true" />
+            android:layout_height="500dp"
+            android:background="@drawable/ic_wave" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:src="@drawable/anh_ic_logo_khoa_cntt" />
 
-        <Button
-            android:id="@+id/btn_dang_nhap"
-            android:layout_width="190dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="470dp"
-            android:background="@drawable/goc_bo_tron"
-            android:backgroundTint="#068940"
-            android:text="Đăng Nhập"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="EContact"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="italic|bold" />
 
-        <TextView
-            android:id="@+id/tv_quen_mat_khau"
-            android:layout_width="135dp"
-            android:layout_height="44dp"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="410dp"
-            android:text="Quên mật khẩu"
-            android:textColor="@color/white" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:text="Welcome"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nhập mã sinh viên"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edt_ma_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_editext"
+                    android:paddingLeft="10dp"
+                    android:text="0329089798" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nhập mật khẩu"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_mat_khau"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_editext"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:text="0329089798" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="* Tiếp tục nghĩa là bạn đồng ý với các" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Điều khoản sử dụng EContact"
+                    android:textColor="#2196F3" />
+
+                <Button
+                    android:id="@+id/btn_dang_nhap"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_button"
+                    android:backgroundTint="@color/blue"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_quen_mat_khau"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_button"
+                    android:text="Quên mật khẩu"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
