@@ -9,16 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.utehy.econtact.Models.Thongbao;
 import com.utehy.econtact.R;
 
 import java.util.List;
+import java.util.Map;
 
 public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.ThongbaoViewHolder> {
 
-    private List<Thongbao> mListThongbao;
+    private List<Map<String, Object>> mListThongbao;
 
-    public ThongbaoAdapter(List<Thongbao> mListThongbao) {
+    public ThongbaoAdapter(List<Map<String, Object>> mListThongbao) {
         this.mListThongbao = mListThongbao;
     }
 
@@ -31,19 +31,18 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
 
     @Override
     public void onBindViewHolder(@NonNull ThongbaoViewHolder holder, int position) {
-        Thongbao thongbao = mListThongbao.get(position);
-        if (thongbao == null){
+        Map<String, Object> thongbao = mListThongbao.get(position);
+        if (thongbao == null) {
             return;
         }
 
-        holder.img_thongbao.setImageResource(thongbao.getId());
-        holder.tv_tenthongbao.setText(thongbao.getTenthongbao());
-        holder.tv_noidung.setText(thongbao.getNoidung());
+        holder.tv_tenthongbao.setText(thongbao.get("notification_title").toString());
+        holder.tv_noidung.setText(thongbao.get("notification_content").toString());
     }
 
     @Override
     public int getItemCount() {
-        if (mListThongbao != null){
+        if (mListThongbao != null) {
             return mListThongbao.size();
         }
         return 0;

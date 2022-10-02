@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                 String maSV = edtTaiKhoan.getText().toString();
                 String matKhau = edtMatKhau.getText().toString();
                 if (maSV.isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "Mã sinh viên không được để trống", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Tài khoản không được để trống", Toast.LENGTH_LONG).show();
                 }
                 if (maSV.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Mật khẩu không được để trống", Toast.LENGTH_LONG).show();
@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (response.isSuccessful()) {
                                 Common.LOGIN_USER = response.body();
                                 Common.TOKEN = (String) Common.LOGIN_USER.get("access_token");
+                                Log.e("TAG", "token: " + Common.TOKEN);
                                 startActivity(new Intent(getApplicationContext(), ManHinhChinhActivity.class));
                                 dialog.dismiss();
                             } else {

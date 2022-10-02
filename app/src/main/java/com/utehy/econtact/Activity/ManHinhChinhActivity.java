@@ -1,6 +1,8 @@
 package com.utehy.econtact.Activity;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.ArrayMap;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.utehy.econtact.Adapter.ThongbaoAdapter;
 import com.utehy.econtact.Adapter.TinTucAdater;
 import com.utehy.econtact.Api.ApiService;
 import com.utehy.econtact.Models.TinTuc;
@@ -90,6 +93,12 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), DiemRenLuyenActivity.class));
             }
         });
+        findViewById(R.id.img_btn_noti).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setPopUpThongBao();
+            }
+        });
     }
 
 
@@ -142,8 +151,53 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 Log.e("TAG", "onFailure: " + t.getMessage());
             }
         });
+    }
 
+    List<Map<String, Object>> thongBaos = new ArrayList<>();
 
+    private void setPopUpThongBao() {
+        Dialog dialog = new Dialog(ManHinhChinhActivity.this);
+        dialog.setContentView(R.layout.dialog_thong_bao);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        Button btnClose = dialog.findViewById(R.id.btn_huy);
+        RecyclerView rcvThongBao = dialog.findViewById(R.id.rcv_thongbao);
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        Map<String, Object> jsonParams = new ArrayMap<>();
+        Map<String, String> method = new HashMap<>();
+        method.put("Method", "POST");
+        jsonParams.put("Method", method);
+        jsonParams.put("Url", "/api/notification2/get-my-notification2");
+        jsonParams.put("Module", "TEACHER");
+        String data = "{\"page\":1,\"pageSize\":10}";
+        jsonParams.put("Data", data);
+        jsonParams.put("ContentType", "application/json");
+        jsonParams.put("AcceptType", "application/json");
+
+        Log.e("TAG", "loadDiem: " + jsonParams.toString());
+        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), (new JSONObject(jsonParams)).toString());
+        ApiService.api.executeAdapter(body).enqueue(new Callback<Map<String, Object>>() {
+            @Override
+            public void onResponse(Call<Map<String, Object>> call, Response<Map<String, Object>> response) {
+                if (response.isSuccessful()) {
+                    thongBaos = (List<Map<String, Object>>) response.body().get("data");
+                    ThongbaoAdapter adapter = new ThongbaoAdapter(thongBaos);
+                    rcvThongBao.setAdapter(adapter);
+                }
+                Log.e("TAG", "onResponse: " + response.toString());
+            }
+
+            @Override
+            public void onFailure(Call<Map<String, Object>> call, Throwable t) {
+                Log.e("TAG", "onFailure: " + t.getMessage());
+            }
+        });
+        dialog.show();
     }
 
 }
