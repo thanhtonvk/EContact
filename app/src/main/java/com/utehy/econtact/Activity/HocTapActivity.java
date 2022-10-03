@@ -69,7 +69,7 @@ public class HocTapActivity extends AppCompatActivity {
     }
 
     private void loadNamHoc() {
-        String maLop = Common.STUDENT_BY_FAMILY.get("class_id");
+        String maLop = Common.STUDENT_BY_FAMILY.get("class_id").toString();
         Map<String, Object> jsonParams = new ArrayMap<>();
         Map<String, String> method = new HashMap<>();
         method.put("Method", "GET");
@@ -89,7 +89,6 @@ public class HocTapActivity extends AppCompatActivity {
                     for (Map<String, String> stringMap : data
                     ) {
                         namHocList.add(new NamHoc(stringMap.get("value"), "1"));
-                        namHocList.add(new NamHoc(stringMap.get("value"), "2"));
                         namHocAdapter.notifyDataSetChanged();
                     }
 

@@ -46,8 +46,4 @@ public interface ApiService {
     @POST("adapter/execute")
     Call<Map<String, Object>> executeAdapter(@Body RequestBody params);
 
-
-    @POST("adapter/execute")
-    Call<ResponseDiem> executeAdapter2(@Body String params);
-
 }

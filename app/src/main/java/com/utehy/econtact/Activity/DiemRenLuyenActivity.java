@@ -75,9 +75,13 @@ public class DiemRenLuyenActivity extends AppCompatActivity {
     }
 
     private void loadDiemRL() {
-        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd");
+        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd").toString();
         Map<String, Object> jsonParams = new ArrayMap<>();
+
+
         Map<String, String> method = new HashMap<>();
+
+
         method.put("Method", "POST");
         jsonParams.put("Method", method);
         jsonParams.put("Url", "/api/point-training/search");

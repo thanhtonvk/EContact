@@ -99,6 +99,12 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 setPopUpThongBao();
             }
         });
+        findViewById(R.id.btn_lien_he).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), LienHeActivity.class));
+            }
+        });
     }
 
 
@@ -137,9 +143,9 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 Log.e("TAG", "onResponse: " + response);
                 if (response.isSuccessful()) {
                     Map<String, Object> result = response.body();
-                    List<Map<String, String>> data = (List<Map<String, String>>) result.get("data");
+                    List<Map<String, Object>> data = (List<Map<String, Object>>) result.get("data");
                     if (data.size() > 0) {
-                        tvHoTen.setText(data.get(0).get("student_name"));
+                        tvHoTen.setText(data.get(0).get("student_name").toString());
                         Common.STUDENT_BY_FAMILY = data.get(0);
                     }
 

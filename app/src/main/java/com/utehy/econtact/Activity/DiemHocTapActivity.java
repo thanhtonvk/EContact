@@ -58,14 +58,14 @@ public class DiemHocTapActivity extends AppCompatActivity {
     }
 
     private void loadDiem() {
-        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd");
+        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd").toString();
         Map<String, Object> jsonParams = new ArrayMap<>();
         Map<String, String> method = new HashMap<>();
         method.put("Method", "POST");
         jsonParams.put("Method", method);
         jsonParams.put("Url", "/api/subject-score/search");
         jsonParams.put("Module", "TEACHER");
-        String data = String.format("{\"academy_year\":\"%s\",\"semester\":\"%s\",\"student_rcd\":\"%s\",\"page\":1,\"pageSize\":0}", NamHoc.NAM_HOC.getNamHoc(),NamHoc.NAM_HOC.getKiHoc(),maHS);
+        String data = String.format("{\"academy_year\":\"%s\",\"semester\":\"%s\",\"student_rcd\":\"%s\",\"page\":1,\"pageSize\":0}", NamHoc.NAM_HOC.getNamHoc(), NamHoc.NAM_HOC.getKiHoc(), maHS);
         jsonParams.put("Data", data);
         jsonParams.put("ContentType", "application/json");
         jsonParams.put("AcceptType", "application/json");

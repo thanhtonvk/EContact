@@ -11,7 +11,7 @@ public class Common {
     public static String BASE_URL = "http://117.4.121.197:6786/api/";
     public static String FACILITY_ID = "00000000-0000-8000-0000-000000000000";
     public static String TOKEN;
-    public static Map<String, String> STUDENT_BY_FAMILY;
+    public static Map<String, Object> STUDENT_BY_FAMILY;
     public static Map<String, Object> LOGIN_USER;
     public static Map<String, String> HOCKI;
 

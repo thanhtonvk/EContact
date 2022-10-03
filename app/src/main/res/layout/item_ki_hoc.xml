@@ -49,10 +49,9 @@
                             android:id="@+id/cicular"
                             android:layout_width="87dp"
                             android:layout_height="78dp"
-                            app:cpb_background_progressbar_color="@color/orange" />
+                            app:cpb_background_progressbar_color="#2196F3" />
                     </LinearLayout>
                 </RelativeLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -69,6 +68,14 @@
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
+                    <TextView
+                        android:id="@+id/tv_hocki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Học kì: 2"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

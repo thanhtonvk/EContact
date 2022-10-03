@@ -12,18 +12,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mikhaellopez.circularprogressbar.CircularProgressBar;
-import com.utehy.econtact.Activity.HocKiActivity;
+import com.utehy.econtact.Activity.DiemHocTapActivity;
 import com.utehy.econtact.Models.NamHoc;
 import com.utehy.econtact.R;
+import com.utehy.econtact.Tools.Common;
 
 import java.util.List;
+import java.util.Random;
 
-public class NamHocAdapter extends RecyclerView.Adapter<NamHocAdapter.ViewHolder> {
+public class HocKiAdapter extends RecyclerView.Adapter<HocKiAdapter.ViewHolder> {
 
     List<NamHoc> namHocs;
     Context context;
 
-    public NamHocAdapter(List<NamHoc> namHocs, Context context) {
+    public HocKiAdapter(List<NamHoc> namHocs, Context context) {
         this.namHocs = namHocs;
         this.context = context;
     }
@@ -31,8 +33,8 @@ public class NamHocAdapter extends RecyclerView.Adapter<NamHocAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_academy_year, parent, false);
-        return new ViewHolder(view);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_ki_hoc, parent, false);
+        return new HocKiAdapter.ViewHolder(view);
     }
 
     @Override
@@ -40,20 +42,21 @@ public class NamHocAdapter extends RecyclerView.Adapter<NamHocAdapter.ViewHolder
         NamHoc namHoc = namHocs.get(position);
         long animDuration = 1000;
         holder.circularProgressBar.setProgressWithAnimation(100f, animDuration);
-        holder.circularProgressBar.setProgressBarColor(Color.BLUE);
+        holder.circularProgressBar.setProgressBarColor(Common.colors[new Random().nextInt(7)]);
 // or with gradient
-        holder.circularProgressBar.setProgressBarColorStart(Color.argb(100, 244, 67, 54));
+        holder.circularProgressBar.setProgressBarColorEnd(Color.YELLOW);
 
-        holder.circularProgressBar.setProgressBarColorEnd(Color.argb(100, 205, 220, 67));
+        holder.circularProgressBar.setProgressBarColorStart(Color.BLUE);
         holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
         holder.tvSoKiHoc.setText((position + 1) + "");
+        holder.tvKiHoc.setText("Học kì: " + namHoc.getKiHoc());
         holder.tvNamHoc.setText("Năm học: " + namHoc.getNamHoc());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NamHoc.NAM_HOC = namHoc;
-                context.startActivity(new Intent(context, HocKiActivity.class));
+                context.startActivity(new Intent(context, DiemHocTapActivity.class));
             }
         });
 

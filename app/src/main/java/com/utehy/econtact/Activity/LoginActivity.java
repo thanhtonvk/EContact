@@ -100,6 +100,18 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        findViewById(R.id.btn_quen_mat_khau).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String maSV = edtTaiKhoan.getText().toString();
+                if (maSV.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Tài khoản không được để trống", Toast.LENGTH_LONG).show();
+                } else {
+                    startActivity(new Intent(getApplicationContext(), Ma_OTP_Activity.class));
+                }
+
+            }
+        });
 
     }
 }
