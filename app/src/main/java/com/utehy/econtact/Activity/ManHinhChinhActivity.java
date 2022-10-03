@@ -105,6 +105,12 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LienHeActivity.class));
             }
         });
+        findViewById(R.id.btn_cai_dat).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CatDatActivity.class));
+            }
+        });
     }
 
 
