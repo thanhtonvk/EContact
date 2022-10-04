@@ -1,6 +1,7 @@
 package com.utehy.econtact.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mikhaellopez.circularprogressbar.CircularProgressBar;
 import com.utehy.econtact.R;
-import com.utehy.econtact.Tools.Common;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 public class DiemRenLuyenAdapter extends RecyclerView.Adapter<DiemRenLuyenAdapter.ViewHolder> {
 
@@ -40,11 +39,18 @@ public class DiemRenLuyenAdapter extends RecyclerView.Adapter<DiemRenLuyenAdapte
         long animDuration = 1000;
         float score = Float.parseFloat(diemRL.get("point").toString());
         holder.circularProgressBar.setProgressWithAnimation(score, animDuration);
-        holder.circularProgressBar.setProgressBarColor(Common.colors[new Random().nextInt(7)]);
-// or with gradient
-        holder.circularProgressBar.setProgressBarColorStart(Common.colors[new Random().nextInt(7)]);
-        holder.circularProgressBar.setProgressBarColorEnd(Common.colors[new Random().nextInt(7)]);
-        holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
+
+        if (score < 50) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(95,158,160));
+        } else if (score >= 50 && score < 70) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(70,130,180));
+        } else if (score >= 7 && score < 80) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(100,149,237));
+        } else if (score >= 80 && score < 90) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,191,255));
+        } else {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(30,144,255));
+        }
         holder.tvDiem.setText(((int) score) + "");
         holder.tvKiHoc.setText("Học kì: " + diemRL.get("semester"));
         holder.tvNamHoc.setText("Năm học: " + diemRL.get("academy_year"));

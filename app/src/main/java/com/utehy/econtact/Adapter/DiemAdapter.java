@@ -1,6 +1,7 @@
 package com.utehy.econtact.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.mikhaellopez.circularprogressbar.CircularProgressBar;
 import com.utehy.econtact.R;
-import com.utehy.econtact.Tools.Common;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 public class DiemAdapter extends RecyclerView.Adapter<DiemAdapter.ViewHolder> {
     Context context;
@@ -39,12 +38,18 @@ public class DiemAdapter extends RecyclerView.Adapter<DiemAdapter.ViewHolder> {
         long animationDuration = 2500;
         float score = Float.parseFloat(obj.get("score").toString());
         holder.circularProgressBar.setProgressWithAnimation((score / 10 * 100), animationDuration);
-        holder.circularProgressBar.setProgressBarColor(Common.colors[new Random().nextInt(7)]);
-// or with gradient
-        holder.circularProgressBar.setProgressBarColorStart(Common.colors[new Random().nextInt(7)]);
-        holder.circularProgressBar.setProgressBarColorEnd(Common.colors[new Random().nextInt(7)]);
-        holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
-        holder.tvSoTC.setText("Số tín chỉ: "+obj.get("number_credits").toString());
+        if (score < 5.0) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,0,0));
+        } else if (score >= 5.0 && score < 7.0) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,128,0));
+        } else if (score >= 7 && score < 8.0) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,255,0));
+        } else if (score >= 8.0 && score < 9.0) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(128,255,0));
+        } else {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,204,204));
+        }
+        holder.tvSoTC.setText("Số tín chỉ: " + obj.get("number_credits").toString());
         holder.tvMonHoc.setText(obj.get("subject_name").toString());
         holder.tvDiem.setText(obj.get("score").toString());
     }

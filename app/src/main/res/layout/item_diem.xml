@@ -49,7 +49,7 @@
                             android:id="@+id/cicular"
                             android:layout_width="87dp"
                             android:layout_height="78dp"
-                            app:cpb_background_progressbar_color="@color/yelow" />
+                            app:cpb_background_progressbar_color="#0000796B" />
                     </LinearLayout>
                 </RelativeLayout>
 

@@ -44,10 +44,10 @@ public class HocKiAdapter extends RecyclerView.Adapter<HocKiAdapter.ViewHolder> 
         holder.circularProgressBar.setProgressWithAnimation(100f, animDuration);
         holder.circularProgressBar.setProgressBarColor(Common.colors[new Random().nextInt(7)]);
 // or with gradient
-        holder.circularProgressBar.setProgressBarColorEnd(Color.YELLOW);
-
-        holder.circularProgressBar.setProgressBarColorStart(Color.BLUE);
-        holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
+//        holder.circularProgressBar.setProgressBarColorEnd(Color.YELLOW);
+//
+//        holder.circularProgressBar.setProgressBarColorStart(Color.BLUE);
+//        holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
         holder.tvSoKiHoc.setText((position + 1) + "");
         holder.tvKiHoc.setText("Học kì: " + namHoc.getKiHoc());
         holder.tvNamHoc.setText("Năm học: " + namHoc.getNamHoc());
