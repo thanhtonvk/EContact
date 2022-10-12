@@ -111,6 +111,12 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), CatDatActivity.class));
             }
         });
+        findViewById(R.id.btn_hoc_phi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), HocPhiActivity.class));
+            }
+        });
     }
 
 
