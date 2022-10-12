@@ -37,7 +37,21 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
         }
 
         holder.tv_tenthongbao.setText(thongbao.get("notification_title").toString());
-        holder.tv_noidung.setText(thongbao.get("notification_content").toString());
+        String noiDung = thongbao.get("notification_content").toString();
+        if (noiDung.length() > 80) {
+            holder.tv_noidung.setText(noiDung.substring(0, 80) + " ...");
+            holder.tvXemThem.setVisibility(View.VISIBLE);
+            holder.tvXemThem.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    holder.tv_noidung.setText(noiDung);
+                    holder.tvXemThem.setVisibility(View.INVISIBLE);
+                }
+            });
+        } else {
+            holder.tv_noidung.setText(noiDung);
+        }
+
     }
 
     @Override
@@ -53,13 +67,14 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
         private ImageView img_thongbao;
         private TextView tv_tenthongbao;
         private TextView tv_noidung;
-
+        private TextView tvXemThem;
 
         public ThongbaoViewHolder(@NonNull View itemView) {
             super(itemView);
             img_thongbao = itemView.findViewById(R.id.img_thongbao);
             tv_tenthongbao = itemView.findViewById(R.id.tv_item_thongbao);
             tv_noidung = itemView.findViewById(R.id.tv_item_noidung);
+            tvXemThem = itemView.findViewById(R.id.tv_xem_them);
         }
     }
 }

@@ -45,11 +45,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_item_thongbao"
-                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_toRightOf="@id/img_thongbao"
                 android:text="HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_xem_them"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_noidung"
+                android:layout_toRightOf="@id/img_thongbao"
+                android:text="Xem thêm"
+                android:textColor="@color/blue"
+                android:visibility="gone" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
