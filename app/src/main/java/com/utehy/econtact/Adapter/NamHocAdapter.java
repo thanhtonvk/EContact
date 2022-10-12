@@ -42,10 +42,11 @@ public class NamHocAdapter extends RecyclerView.Adapter<NamHocAdapter.ViewHolder
         holder.circularProgressBar.setProgressWithAnimation(100f, animDuration);
         holder.circularProgressBar.setProgressBarColor(Color.BLUE);
 // or with gradient
-        holder.circularProgressBar.setProgressBarColorStart(Color.argb(100, 244, 67, 54));
+        holder.circularProgressBar.setProgressBarColor(Color.rgb(51,153,255));
+       // holder.circularProgressBar.setProgressBarColorStart(Color.argb(100, 51, 153, 255));
 
-        holder.circularProgressBar.setProgressBarColorEnd(Color.argb(100, 205, 220, 67));
-        holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
+        //holder.circularProgressBar.setProgressBarColorEnd(Color.argb(100, 51, 153, 255));
+        //holder.circularProgressBar.setProgressBarColorDirection(CircularProgressBar.GradientDirection.TOP_TO_BOTTOM);
         holder.tvSoKiHoc.setText((position + 1) + "");
         holder.tvNamHoc.setText("Năm học: " + namHoc.getNamHoc());
 

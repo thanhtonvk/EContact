@@ -15,7 +15,7 @@ public class Common {
     public static Map<String, Object> LOGIN_USER;
     public static Map<String, String> HOCKI;
 
-    public static int[] colors = new int[]{Color.CYAN, Color.DKGRAY, Color.BLUE, Color.GREEN, Color.RED, Color.YELLOW, Color.MAGENTA, Color.BLACK};
+    public static int[] colors = new int[]{Color.BLUE};
 
     public static String toMD5(String content) {
         try {

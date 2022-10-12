@@ -39,15 +39,15 @@ public class DiemAdapter extends RecyclerView.Adapter<DiemAdapter.ViewHolder> {
         float score = Float.parseFloat(obj.get("score").toString());
         holder.circularProgressBar.setProgressWithAnimation((score / 10 * 100), animationDuration);
         if (score < 5.0) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,0,0));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(153,204, 255));
         } else if (score >= 5.0 && score < 7.0) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,128,0));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(102,178,255));
         } else if (score >= 7 && score < 8.0) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(255,255,0));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(51,153,255));
         } else if (score >= 8.0 && score < 9.0) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(128,255,0));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,128,255));
         } else {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,204,204));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,102,204));
         }
         holder.tvSoTC.setText("Số tín chỉ: " + obj.get("number_credits").toString());
         holder.tvMonHoc.setText(obj.get("subject_name").toString());

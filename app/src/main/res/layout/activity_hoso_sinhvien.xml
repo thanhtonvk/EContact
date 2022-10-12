@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center_horizontal"
-                android:text="Đỗ Thành Tôn"
+                android:text="Lê Thị Hường"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -107,7 +107,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
-                                android:text="10119064"
+                                android:text="10119263"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
@@ -159,7 +159,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
-                                android:text="1011901A"
+                                android:text="101195"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
@@ -310,7 +310,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
-                                android:text="Nam"
+                                android:text="Nữ"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
@@ -460,7 +460,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="center_vertical"
-                                android:text="Hưng yên"
+                                android:text="Hưng Yên"
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 

@@ -59,8 +59,13 @@
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/mau_greenblue.xml" value="0.2555" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/mau_timhong.xml" value="0.2555" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/vien.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_cat_dat.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_diem_hoc_tap.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_diem_ren_luyen.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoc_ki.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoc_tap.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_login.xml" value="0.2128623188405797" />
@@ -71,6 +76,11 @@
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_thongbao.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_trangchu.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/dangnhap.xml" value="0.2128623188405797" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/dialog_thong_bao.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_academy_year.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_diem.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_diem_rl.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_ki_hoc.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_quatrinh.xml" value="0.24139492753623187" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_thongbao.xml" value="0.24139492753623187" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/drawable/border_button.xml" value="0.213" />

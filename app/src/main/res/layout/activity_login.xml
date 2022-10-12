@@ -26,7 +26,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="3"
                 android:src="@drawable/anh_ic_logo_khoa_cntt" />
 
             <LinearLayout
@@ -43,7 +43,7 @@
                     android:padding="20dp"
                     android:text="EContact"
                     android:textColor="@color/white"
-                    android:textSize="30sp"
+                    android:textSize="35sp"
                     android:textStyle="italic|bold" />
 
             </LinearLayout>
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:gravity="center"
-                    android:text="Welcome"
+                    android:text="Đăng nhập"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />

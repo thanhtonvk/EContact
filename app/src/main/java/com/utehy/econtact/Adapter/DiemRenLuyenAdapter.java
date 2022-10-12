@@ -41,15 +41,15 @@ public class DiemRenLuyenAdapter extends RecyclerView.Adapter<DiemRenLuyenAdapte
         holder.circularProgressBar.setProgressWithAnimation(score, animDuration);
 
         if (score < 50) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(95,158,160));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(153,204,255));
         } else if (score >= 50 && score < 70) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(70,130,180));
-        } else if (score >= 7 && score < 80) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(100,149,237));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(102,178,255));
+        } else if (score >= 70 && score < 80) {
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(51,153,255));
         } else if (score >= 80 && score < 90) {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,191,255));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,128,255));
         } else {
-            holder.circularProgressBar.setProgressBarColor(Color.rgb(30,144,255));
+            holder.circularProgressBar.setProgressBarColor(Color.rgb(0,102,204));
         }
         holder.tvDiem.setText(((int) score) + "");
         holder.tvKiHoc.setText("Học kì: " + diemRL.get("semester"));
