@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "598284073777",
+    "firebase_url": "https://econtact-notification-47333-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "econtact-notification-47333",
+    "storage_bucket": "econtact-notification-47333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598284073777:android:7d09888f246204fcdf4e10",
+        "android_client_info": {
+          "package_name": "com.utehy.econtact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598284073777-2okmf6se44saj0fqovrdgnvfrfs8pkma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhu2oCNT6hjCs-rgjAVHff7cvkm6AdG_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598284073777-2okmf6se44saj0fqovrdgnvfrfs8pkma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

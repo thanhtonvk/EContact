@@ -35,7 +35,7 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
         if (thongbao == null) {
             return;
         }
-
+        holder.tvNgay.setText(thongbao.get("created_date_time").toString());
         holder.tv_tenthongbao.setText(thongbao.get("notification_title").toString());
         String noiDung = thongbao.get("notification_content").toString();
         if (noiDung.length() > 80) {
@@ -68,6 +68,7 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
         private TextView tv_tenthongbao;
         private TextView tv_noidung;
         private TextView tvXemThem;
+        private TextView tvNgay;
 
         public ThongbaoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,6 +76,7 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
             tv_tenthongbao = itemView.findViewById(R.id.tv_item_thongbao);
             tv_noidung = itemView.findViewById(R.id.tv_item_noidung);
             tvXemThem = itemView.findViewById(R.id.tv_xem_them);
+            tvNgay = itemView.findViewById(R.id.tv_thoi_gian);
         }
     }
 }

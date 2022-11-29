@@ -67,6 +67,7 @@ public class HoSoActivity extends AppCompatActivity {
     private void loadData() {
         Log.e("TAG", "loadData: " + Common.LOGIN_USER.get("facility"));
         Map<String, String> facility = new Gson().fromJson(Common.LOGIN_USER.get("facility").toString(), Map.class);
+        Log.e("TAG ", STUDENT_BY_FAMILY.toString());
         tv_hoso_chuyen_nganh.setText(facility.get("facility_name_l").toString());
         tv_hoso_masinhvien.setText(Common.STUDENT_BY_FAMILY.get("student_rcd").toString());
         tv_hoso_gvcn.setText(Common.STUDENT_BY_FAMILY.get("form_teacher").toString());

@@ -2,6 +2,7 @@ package com.utehy.econtact.Activity;
 
 import static com.utehy.econtact.Api.ApiService.api;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
@@ -13,9 +14,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.utehy.econtact.R;
+import com.utehy.econtact.Service.NotificationService;
 import com.utehy.econtact.Tools.Common;
 
 import java.util.HashMap;
@@ -42,6 +45,8 @@ public class LoginActivity extends AppCompatActivity {
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color));
         }
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.FOREGROUND_SERVICE}, 123);
+
     }
 
     private void initView() {
@@ -79,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (response.isSuccessful()) {
                                 Common.LOGIN_USER = response.body();
                                 Common.TOKEN = (String) Common.LOGIN_USER.get("access_token");
-                                Log.e("TAG", "token: " + Common.TOKEN);
+                                Log.e("TAG", "Login user: " + Common.LOGIN_USER);
                                 startActivity(new Intent(getApplicationContext(), ManHinhChinhActivity.class));
                                 dialog.dismiss();
                             } else {

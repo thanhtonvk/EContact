@@ -21,6 +21,7 @@ import com.utehy.econtact.Adapter.TinTucAdater;
 import com.utehy.econtact.Api.ApiService;
 import com.utehy.econtact.Models.TinTuc;
 import com.utehy.econtact.R;
+import com.utehy.econtact.Service.NotificationService;
 import com.utehy.econtact.Tools.Common;
 
 import org.json.JSONObject;
@@ -59,6 +60,7 @@ public class ManHinhChinhActivity extends AppCompatActivity {
         loadThongTin();
         onClick();
         loadTinTuc();
+
     }
 
     private void initView() {
@@ -159,6 +161,9 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                     if (data.size() > 0) {
                         tvHoTen.setText(data.get(0).get("student_name").toString());
                         Common.STUDENT_BY_FAMILY = data.get(0);
+                        NotificationService.className = Common.STUDENT_BY_FAMILY.get("class_id").toString();
+                        startService(new Intent(getApplicationContext(), NotificationService.class));
+
                     }
 
                 }
@@ -207,7 +212,7 @@ public class ManHinhChinhActivity extends AppCompatActivity {
                     ThongbaoAdapter adapter = new ThongbaoAdapter(thongBaos);
                     rcvThongBao.setAdapter(adapter);
                 }
-                Log.e("TAG", "onResponse: " + response.toString());
+                Log.e("TAG", "onResponse: " + response.body().toString());
             }
 
             @Override
