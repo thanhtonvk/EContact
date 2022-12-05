@@ -54,13 +54,15 @@ public class NotificationService extends Service {
                             }
 
                         }
-                        Notifications noti = notificationsList.get(notificationsList.size() - 1);
-                        if (noti.class_id.toLowerCase().contains(className.toLowerCase())) {
-                            Notification notification = new NotificationCompat.Builder(getApplicationContext(), NOTI)
-                                    .setContentTitle(noti.notification_title)
-                                    .setContentText(noti.getNotification_content())
-                                    .setSmallIcon(R.drawable.anh_notification).build();
-                            startForeground(1, notification);
+                        if (notificationsList.size() > 1) {
+                            Notifications noti = notificationsList.get(notificationsList.size() - 1);
+                            if (noti.class_id.toLowerCase().contains(className.toLowerCase())) {
+                                Notification notification = new NotificationCompat.Builder(getApplicationContext(), NOTI)
+                                        .setContentTitle(noti.notification_title)
+                                        .setContentText(noti.getNotification_content())
+                                        .setSmallIcon(R.drawable.anh_notification).build();
+                                startForeground(1, notification);
+                            }
                         }
 
 
