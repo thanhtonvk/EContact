@@ -19,15 +19,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp">
 
-            <ImageView
-                android:id="@+id/img_thongbao"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/anh_ic_logo_khoa_cntt" />
+
 
             <TextView
                 android:id="@+id/tv_item_thongbao"
@@ -35,7 +27,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_thoi_gian"
                 android:layout_marginTop="1dp"
-                android:layout_toRightOf="@id/img_thongbao"
                 android:text="@string/thong_bao"
                 android:textColor="@color/black"
                 android:textSize="20dp"
@@ -57,7 +48,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="5dp"
-                android:layout_toRightOf="@id/img_thongbao"
                 android:text="HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA HÔM NAY NGHỈ HỌC NHA"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
@@ -67,7 +57,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_item_noidung"
-                android:layout_toRightOf="@id/img_thongbao"
                 android:text="Xem thêm"
                 android:textColor="@color/blue"
                 android:visibility="gone" />

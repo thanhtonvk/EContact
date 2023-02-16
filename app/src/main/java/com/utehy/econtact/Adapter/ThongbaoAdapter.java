@@ -72,7 +72,7 @@ public class ThongbaoAdapter extends RecyclerView.Adapter<ThongbaoAdapter.Thongb
 
         public ThongbaoViewHolder(@NonNull View itemView) {
             super(itemView);
-            img_thongbao = itemView.findViewById(R.id.img_thongbao);
+            //img_thongbao = itemView.findViewById(R.id.img_thongbao);
             tv_tenthongbao = itemView.findViewById(R.id.tv_item_thongbao);
             tv_noidung = itemView.findViewById(R.id.tv_item_noidung);
             tvXemThem = itemView.findViewById(R.id.tv_xem_them);

@@ -58,7 +58,7 @@ public class DiemHocTapActivity extends AppCompatActivity {
     }
 
     private void loadDiem() {
-        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd").toString();
+        String maHS = Common.STUDENT_BY_FAMILY.get("student_rcd").toString();//lấy mã học sinh
         Map<String, Object> jsonParams = new ArrayMap<>();
         Map<String, String> method = new HashMap<>();
         method.put("Method", "POST");

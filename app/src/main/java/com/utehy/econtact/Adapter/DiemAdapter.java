@@ -51,7 +51,7 @@ public class DiemAdapter extends RecyclerView.Adapter<DiemAdapter.ViewHolder> {
         }
         holder.tvSoTC.setText("Số tín chỉ: " + obj.get("number_credits").toString());
         holder.tvMonHoc.setText(obj.get("subject_name").toString());
-        holder.tvDiem.setText(obj.get("score").toString());
+        holder.tvDiem.setText(obj.get("score").toString());//dictionary
     }
 
     @Override

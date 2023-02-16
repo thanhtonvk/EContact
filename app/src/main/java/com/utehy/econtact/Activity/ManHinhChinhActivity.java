@@ -195,7 +195,7 @@ public class ManHinhChinhActivity extends AppCompatActivity {
         Map<String, String> method = new HashMap<>();
         method.put("Method", "POST");
         jsonParams.put("Method", method);
-        jsonParams.put("Url", "/api/notification2/get-my-notification2");
+        jsonParams.put("Url", "/api/notification2/get-my-notification2X");
         jsonParams.put("Module", "TEACHER");
         String data = "{\"page\":1,\"pageSize\":10}";
         jsonParams.put("Data", data);
