@@ -47,8 +47,8 @@
 
                         <com.mikhaellopez.circularprogressbar.CircularProgressBar
                             android:id="@+id/cicular"
-                            android:layout_width="87dp"
-                            android:layout_height="78dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             app:cpb_background_progressbar_color="#2196F3" />
                     </LinearLayout>
                 </RelativeLayout>

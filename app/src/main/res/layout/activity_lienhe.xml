@@ -38,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="#FFFFFF"
             android:orientation="vertical">
 
 
@@ -74,8 +75,8 @@
                         android:autoLink="email"
                         android:gravity="center_vertical"
                         android:text="dhspkt@utehy.edu.vn"
-                        android:textColor="@color/blue"
-                        android:textColorLink="@color/blue"
+                        android:textColor="#1C82AD"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -89,10 +90,11 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="58dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/black" />
+                android:background="#CCCCCC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -127,7 +129,7 @@
                         android:autoLink="web"
                         android:gravity="center_vertical"
                         android:text="http://www.utehy.edu.vn/"
-                        android:textColorLink="@color/blue"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -141,9 +143,12 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/black" />
+                android:background="#CCCCCC" />
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -198,10 +203,11 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="58dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/black" />
+                android:background="#CCCCCC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -235,7 +241,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.321.3713081"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -244,7 +250,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.221.3689.888"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -317,10 +323,11 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="58dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/black" />
+                android:background="#CCCCCC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -354,7 +361,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.321.3742076"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -363,7 +370,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.221.3689.555"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -435,10 +442,11 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="58dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="@color/black" />
+                android:background="#CCCCCC" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -472,7 +480,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.320.3894540"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView
@@ -481,7 +489,7 @@
                         android:autoLink="phone"
                         android:gravity="center_vertical"
                         android:text="+84.221.3689.333"
-                        android:textColorLink="@color/red"
+                        android:textColorLink="#1C82AD"
                         android:textSize="18sp" />
 
                     <TextView

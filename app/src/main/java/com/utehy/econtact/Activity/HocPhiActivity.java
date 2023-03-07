@@ -62,7 +62,8 @@ public class HocPhiActivity extends AppCompatActivity {
         jsonParams.put("Method", method);
         jsonParams.put("Url", "/api/tuition-fee/search");
         jsonParams.put("Module", "TEACHER");
-        String data = String.format("{\"page\":0,\"pageSize\":0,\"student_rcd\":\"%s\",\"academy_year\":\"\",\"semester\":\"\"}", maHS);
+
+        String data = String.format("\"{\\\"academy_year\\\":\\\"\\\",\\\"semester\\\":\\\"\\\",\\\"class_id\\\":\\\"\\\",\\\"student_rcd\\\":\\\"%s\\\",\\\"is_paid\\\":null,\\\"page\\\":1,\\\"pageSize\\\":0}\"",maHS);
         jsonParams.put("Data", data);
         jsonParams.put("ContentType", "application/json");
         jsonParams.put("AcceptType", "application/json");
@@ -73,12 +74,12 @@ public class HocPhiActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Map<String, Object>> call, Response<Map<String, Object>> response) {
                 if (response.isSuccessful()) {
-
+                    Log.e("Hocphi", "onResponse: "+response.body() );
                     listHocPhi = (List<Map<String, Object>>) response.body().get("data");
                     hocPhiAdapter = new HocPhiAdapter(listHocPhi, HocPhiActivity.this);
                     rcvHocPhi.setAdapter(hocPhiAdapter);
                 } else {
-                    Log.e("TAG", "onResponse: " + response.body());
+                    Log.e("TAG", "onResponse: " + response.message());
                 }
             }
 

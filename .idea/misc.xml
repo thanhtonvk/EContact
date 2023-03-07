@@ -39,7 +39,14 @@
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/dangnhap.xml" value="0.22" />
         <entry key="..\:/Android studio/EContact/app/src/main/res/layout/trangchu.xml" value="0.19947916666666668" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/border_button.xml" value="0.12" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/border_editext.xml" value="0.12" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/border_shape.xml" value="0.12" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/boxshow.xml" value="0.12" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/goc_bo.xml" value="0.2595" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/goc_bo_tron.xml" value="0.12" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/goc_bo_vien.xml" value="0.12" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/goc_bo_vuong.xml" value="0.12" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/goc_bo_vuong_trangden.xml" value="0.2595" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_autorenew.xml" value="0.2555" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/ic_baseline_account_circle.xml" value="0.2555" />
@@ -61,10 +68,12 @@
         <entry key="..\:/Econtact/EContact/app/src/main/res/drawable/vien.xml" value="0.2555" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_cat_dat.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_cau_hoi_bao_mat.xml" value="0.2128623188405797" />
-        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_diem_hoc_tap.xml" value="0.1" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_diem_hoc_tap.xml" value="0.128" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_diem_ren_luyen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_doi_mat_khau.xml" value="0.16799999999999998" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hien_matkhau.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoc_ki.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoc_phi.xml" value="0.11302083333333333" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoc_tap.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_hoso_sinhvien.xml" value="0.2128623188405797" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/activity_lienhe.xml" value="0.2128623188405797" />
@@ -81,10 +90,13 @@
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_diem.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_diem_rl.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_hoc_phi.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_hocphi.xml" value="0.253125" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_ki_hoc.xml" value="0.25416666666666665" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_quatrinh.xml" value="0.24139492753623187" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_thongbao.xml" value="0.24139492753623187" />
         <entry key="..\:/Econtact/EContact/app/src/main/res/layout/item_tin_tuc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1525" />
+        <entry key="..\:/Econtact/EContact/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1525" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/drawable/border_button.xml" value="0.213" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/drawable/border_editext.xml" value="0.213" />
         <entry key="..\:/LamThue/EContact/app/src/main/res/drawable/border_shape.xml" value="0.144" />

@@ -122,7 +122,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -174,7 +175,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -224,7 +226,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -275,7 +278,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -325,7 +329,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -375,7 +380,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -425,7 +431,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />
@@ -475,7 +482,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_marginLeft="58dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:background="@color/black" />

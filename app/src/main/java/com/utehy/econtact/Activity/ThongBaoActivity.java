@@ -1,17 +1,30 @@
 package com.utehy.econtact.Activity;
 
 import android.os.Bundle;
+import android.util.ArrayMap;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.utehy.econtact.Adapter.ThongbaoAdapter;
+import com.utehy.econtact.Api.ApiService;
 import com.utehy.econtact.Models.Thongbao;
 import com.utehy.econtact.R;
+import com.utehy.econtact.Tools.Common;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ThongBaoActivity extends AppCompatActivity {
 
@@ -39,4 +52,6 @@ public class ThongBaoActivity extends AppCompatActivity {
 
         return list;
     }
-}
+
+    }
+

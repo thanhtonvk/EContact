@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.utehy.econtact.Activity.ThongBaoActivity;
 import com.utehy.econtact.R;
 
 import java.util.List;

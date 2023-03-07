@@ -38,6 +38,8 @@ public class DiemRenLuyenAdapter extends RecyclerView.Adapter<DiemRenLuyenAdapte
         Map<String, Object> diemRL = diemRenLuyenList.get(position);
         long animDuration = 1000;
         float score = Float.parseFloat(diemRL.get("point").toString());
+
+
         holder.circularProgressBar.setProgressWithAnimation(score, animDuration);
 
         if (score < 50) {
@@ -52,7 +54,7 @@ public class DiemRenLuyenAdapter extends RecyclerView.Adapter<DiemRenLuyenAdapte
             holder.circularProgressBar.setProgressBarColor(Color.rgb(0,102,204));
         }
         holder.tvDiem.setText(((int) score) + "");
-        holder.tvKiHoc.setText("Học kì: " + diemRL.get("semester"));
+        holder.tvKiHoc.setText("Học kì: " + diemRL.get("semester").toString());
         holder.tvNamHoc.setText("Năm học: " + diemRL.get("academy_year"));
 
     }

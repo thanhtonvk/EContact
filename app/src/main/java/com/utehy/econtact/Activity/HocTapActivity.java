@@ -6,6 +6,7 @@ import android.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +35,7 @@ public class HocTapActivity extends AppCompatActivity {
     List<NamHoc> namHocList;
     NamHocAdapter namHocAdapter;
     ImageButton btnTroVe;
+    TextView txtTieuDe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,8 @@ public class HocTapActivity extends AppCompatActivity {
         namHocAdapter = new NamHocAdapter(namHocList, this);
         rcvNamHoc = findViewById(R.id.rcv_nam_hoc);
         rcvNamHoc.setAdapter(namHocAdapter);
+        txtTieuDe = findViewById(R.id.txt_tieu_de);
+
 
     }
 

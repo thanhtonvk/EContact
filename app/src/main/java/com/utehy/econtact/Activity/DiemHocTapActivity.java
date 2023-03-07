@@ -6,6 +6,7 @@ import android.util.ArrayMap;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +35,7 @@ public class DiemHocTapActivity extends AppCompatActivity {
     RecyclerView rcvDiem;
     List<Map<String, Object>> diems;
     DiemAdapter diemAdapter;
+    TextView txtTieuDe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,8 @@ public class DiemHocTapActivity extends AppCompatActivity {
         rcvDiem = findViewById(R.id.rcv_diem);
         diemAdapter = new DiemAdapter(this, diems);
         rcvDiem.setAdapter(diemAdapter);
-
+        txtTieuDe = findViewById(R.id.txt_tieu_de);
+        txtTieuDe.setText(NamHoc.NAM_HOC.getNamHoc()+" - HK: "+NamHoc.NAM_HOC.getKiHoc());
     }
 
     private void loadDiem() {

@@ -12,6 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:orientation="vertical">
 
             <LinearLayout
@@ -46,8 +47,8 @@
 
                         <com.mikhaellopez.circularprogressbar.CircularProgressBar
                             android:id="@+id/cicular"
-                            android:layout_width="87dp"
-                            android:layout_height="78dp"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
                             app:cpb_background_progressbar_color="@color/blue" />
                     </LinearLayout>
                 </RelativeLayout>

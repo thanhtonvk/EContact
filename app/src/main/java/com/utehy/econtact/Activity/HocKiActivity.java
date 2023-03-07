@@ -4,6 +4,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,6 +22,7 @@ public class HocKiActivity extends AppCompatActivity {
     List<NamHoc> namHocList;
     HocKiAdapter namHocAdapter;
     ImageButton btnTroVe;
+    TextView txtTieuDe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,8 @@ public class HocKiActivity extends AppCompatActivity {
         namHocAdapter = new HocKiAdapter(namHocList, this);
         rcvNamHoc = findViewById(R.id.rcv_nam_hoc);
         rcvNamHoc.setAdapter(namHocAdapter);
-
+        txtTieuDe = findViewById(R.id.txt_tieu_de);
+        txtTieuDe.setText("Năm học "+NamHoc.NAM_HOC.getNamHoc());
     }
 
     private void back() {
@@ -56,9 +59,9 @@ public class HocKiActivity extends AppCompatActivity {
     }
 
     private void loadNamHoc() {
-        NamHoc namHoc= new NamHoc(NamHoc.NAM_HOC.getNamHoc(),"1");
+        NamHoc namHoc = new NamHoc(NamHoc.NAM_HOC.getNamHoc(), "1");
         namHocList.add(namHoc);
-        namHoc= new NamHoc(NamHoc.NAM_HOC.getNamHoc(),"2");
+        namHoc = new NamHoc(NamHoc.NAM_HOC.getNamHoc(), "2");
         namHocList.add(namHoc);
         namHocAdapter = new HocKiAdapter(namHocList, this);
         rcvNamHoc.setAdapter(namHocAdapter);
