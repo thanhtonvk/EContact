@@ -96,7 +96,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/border_editext"
                     android:paddingLeft="10dp"
-                    android:text="0329089798" />
+                   />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -118,7 +118,7 @@
                         android:background="@drawable/border_editext"
                         android:inputType="textPassword"
                         android:paddingLeft="10dp"
-                        android:text="0329089798" />
+                        />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView

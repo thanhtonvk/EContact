@@ -39,17 +39,18 @@ public class HocPhiAdapter extends RecyclerView.Adapter<HocPhiAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Map<String, Object> hocPhi = listHocPhi.get(position);
-        holder.tvNamHoc.setText(hocPhi.get("tuition_academy_year").toString());
-        holder.tvHocKi.setText(hocPhi.get("tuition_semester").toString());
-        double tuition_fee = (double) hocPhi.get("tuition_fee");
+        holder.tvNamHoc.setText(hocPhi.get("academy_year").toString());
+        holder.tvHocKi.setText(hocPhi.get("semester").toString());
+        double tuition_fee = (double) hocPhi.get("tuition_fee_paid");
+
 
         Locale locale = new Locale("vi", "VN");
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance(locale);
         String phi = numberFormat.format(tuition_fee);
 
         holder.tvHocPhi.setText(phi);
-        boolean isPaid = (boolean) hocPhi.get("is_paid");
-        if (isPaid) {
+        String isPaid = (String) hocPhi.get("note");
+        if (isPaid.equals("TH")) {
             holder.tvTrangThai.setText("Đã thanh toán");
             holder.imgTrangThai.setImageResource(R.drawable.checked);
         } else {

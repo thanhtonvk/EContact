@@ -1,7 +1,8 @@
 package com.utehy.econtact.Models;
 
 public class Notifications {
-    public String created_date_time, class_id, notification_title, notification_content, notification_range;
+    private String created_date_time, class_id, notification_title, notification_content, notification_range;
+    private int notification_type;
 
     public Notifications() {
 
@@ -47,11 +48,20 @@ public class Notifications {
         this.notification_range = notification_range;
     }
 
-    public Notifications(String created_date_time, String class_id, String notification_title, String notification_content, String notification_range) {
+    public int getNotification_type() {
+        return notification_type;
+    }
+
+    public void setNotification_type(int notification_type) {
+        this.notification_type = notification_type;
+    }
+
+    public Notifications(String created_date_time, String class_id, String notification_title, String notification_content, String notification_range, int notification_type) {
         this.created_date_time = created_date_time;
         this.class_id = class_id;
         this.notification_title = notification_title;
         this.notification_content = notification_content;
         this.notification_range = notification_range;
+        this.notification_type = notification_type;
     }
 }

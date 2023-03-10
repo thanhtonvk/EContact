@@ -63,7 +63,9 @@ public class HocPhiActivity extends AppCompatActivity {
         jsonParams.put("Url", "/api/tuition-fee/search");
         jsonParams.put("Module", "TEACHER");
 
-        String data = String.format("\"{\\\"academy_year\\\":\\\"\\\",\\\"semester\\\":\\\"\\\",\\\"class_id\\\":\\\"\\\",\\\"student_rcd\\\":\\\"%s\\\",\\\"is_paid\\\":null,\\\"page\\\":1,\\\"pageSize\\\":0}\"",maHS);
+        String data = String.format("{\"academy_year\":\"\",\"semester\":\"\",\"class_id\":\"\",\"student_rcd\":\"%s\"" +
+                ",\"is_paid\":null,\"page\":1,\"pageSize\":0}",maHS);
+
         jsonParams.put("Data", data);
         jsonParams.put("ContentType", "application/json");
         jsonParams.put("AcceptType", "application/json");

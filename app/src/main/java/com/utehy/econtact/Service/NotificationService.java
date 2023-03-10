@@ -3,6 +3,7 @@ package com.utehy.econtact.Service;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +22,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.utehy.econtact.Activity.HocPhiActivity;
+import com.utehy.econtact.Activity.ManHinhChinhActivity;
+import com.utehy.econtact.Activity.ThongBaoActivity;
 import com.utehy.econtact.Models.Notifications;
 import com.utehy.econtact.R;
 
@@ -36,34 +40,39 @@ public class NotificationService extends Service {
     public static final String NOTI = "thongbao";
     List<Notifications> notificationsList;
     Notification notification;
+
     @Override
     public void onCreate() {
         super.onCreate();
+//        String URL =  "https://econtact-notification-47333-default-rtdb.asia-southeast1.firebasedatabase.app";
         database = FirebaseDatabase.getInstance();
         reference = database.getReference("notifications");
         notificationsList = new ArrayList<>();
         startMyOwnForeground("EContact", "EContact đang chạy trong nền");
         createNotificationChannel("Thông báo", "Thông báo", ID_SIGNAL);
         try {
+            Log.e("Notify", "onCreate: " + "try");
             if (className != null) {
+
+                Log.e("Notify", "onCreate: " + "ok");
                 reference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         notificationsList.clear();
-                        Log.e("TAG", "Noti " + snapshot.toString());
+                        Log.e("Notify", "Noti " + snapshot.toString());
                         for (DataSnapshot dataSnapshot : snapshot.getChildren()
                         ) {
                             Notifications notifications = dataSnapshot.getValue(Notifications.class);
-                            if (notifications.class_id.equalsIgnoreCase(className)) {
+                            if (notifications.getClass_id().equalsIgnoreCase(className)) {
                                 notificationsList.add(notifications);
                             }
 
                         }
                         if (notificationsList.size() > 1) {
                             Notifications noti = notificationsList.get(notificationsList.size() - 1);
-                            if (noti.class_id.toLowerCase().contains(className.toLowerCase())) {
+                            if (noti.getClass_id().toLowerCase().contains(className.toLowerCase())) {
 
-                               pushThongBao(noti.notification_title,noti.notification_content);
+                                pushThongBao(noti.getNotification_title(), noti.getNotification_content(), noti.getNotification_type());
                             }
                         }
 
@@ -72,7 +81,7 @@ public class NotificationService extends Service {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-
+                        Log.e("Notify", "onCancelled: " + error.toString());
                     }
                 });
             }
@@ -82,7 +91,9 @@ public class NotificationService extends Service {
             ex.printStackTrace();
         }
 
+
     }
+
     private void createNotificationChannel(String name, String description, String id) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
@@ -92,23 +103,38 @@ public class NotificationService extends Service {
             notificationManager.createNotificationChannel(channel);
         }
     }
-    private void pushThongBao(String title, String content) {
+
+    private void pushThongBao(String title, String content, int type) {
+        Intent intent = null;
+        //check type trong này
+        if (type == 0) {
+            intent = new Intent(this, HocPhiActivity.class);
+        } else {
+            intent = new Intent(this, ManHinhChinhActivity.class);
+        }
+
+//        intent = new Intent(this, HocPhiActivity.class);
+        PendingIntent pIntent = PendingIntent.getActivity(this, NOTI_ID_MONEY, intent, 0);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, ID_SIGNAL)
                 .setSmallIcon(R.drawable.bell)
                 .setContentTitle(title)
                 .setContentText(content)
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText(content))
+                .setContentIntent(pIntent)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
         notificationManager.notify(NOTI_ID_MONEY, builder.build());
+
     }
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
 
         return super.onStartCommand(intent, flags, startId);
     }
+
     private void startMyOwnForeground(String content, String title) {
         String NOTIFICATION_CHANNEL_ID = "Notifcations";
         String channelName = "Notification";
@@ -133,6 +159,7 @@ public class NotificationService extends Service {
         }
 
     }
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {

@@ -13,10 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.utehy.econtact.Models.Notifications;
 import com.utehy.econtact.R;
 import com.utehy.econtact.Service.NotificationService;
 import com.utehy.econtact.Tools.Common;
@@ -33,6 +40,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText edtTaiKhoan;
     TextInputEditText edtMatKhau;
     Button btnDangNhap, btnQuenMatKhau;
+    public FirebaseDatabase database;
+    public DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +55,6 @@ public class LoginActivity extends AppCompatActivity {
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color));
         }
-
 
     }
 
